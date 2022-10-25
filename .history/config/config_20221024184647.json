@@ -1,7 +1,8 @@
 {
 	"development": {
 		"username": "root",
-		"password": "155450",
+		"password": "155450
+		",
 		"database": "ourofit",
 		"host": "localhost",
 		"dialect": "mysql"
