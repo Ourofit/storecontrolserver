@@ -6,8 +6,8 @@ module.exports = (sequelize, DataTypes) => {
     Sales_Activity.init(
         {
             Sales_id: {
-                type: DataTypes.DOUBLE,
-                allowNull: false,
+                type: DataTypes.UUID,
+                defaultValue: DataTypes.UUIDV4,
                 primaryKey: true,
             },
             year: {
