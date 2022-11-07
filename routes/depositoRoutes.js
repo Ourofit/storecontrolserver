@@ -26,4 +26,13 @@ router.put("/employee", (req, res) => {
     ).then(() => res.send("success"));
 });
 
+// Remove specific Deposito
+router.delete("/delete/:id", (req, res) => {
+    db.Deposito.destroy({
+        where: {
+            Deposito_id: req.params.id,
+        },
+    }).then(() => res.send("success"));
+});
+
 module.exports = router;
