@@ -30,6 +30,7 @@ router.put("/price", (req, res) => {
 });
 // Update Order Master
 router.put("/update", (req, res) => {
+    console.log(req.body);
     db.Order_master.update(
         req.body,
         // {
