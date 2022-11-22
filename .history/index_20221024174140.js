@@ -48,9 +48,6 @@ app.use("/expense", expenseRoutes);
 
 const notificationRoutes = require("./routes/notificationRoutes");
 app.use("/notification", notificationRoutes);
-
-const registerRoutes = require("./routes/registerRoutes");
-app.use("/register", registerRoutes);
 // app.post("/users", async (req, res) => {
 //     const { name, email } = req.body;
 
