@@ -25,9 +25,9 @@ router.delete("/delete/:id", (req, res) => {
 // edit client
 router.put("/edit", (req, res) => {
    
-        db.Register.update(req.body, {
+        db.Expense_master.update(req.body, {
             where: {
-                id: req.body.id,
+                id: req.body.ExpenseId,
             },
         }).then(() => res.send("successfully Updated"));
 

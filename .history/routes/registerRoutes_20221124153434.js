@@ -12,25 +12,13 @@ router.post("/new", (req, res) => {
     db.Register.create(req.body).then((user) => res.send(user));
 });
 
-// Delete client register
+// Delete Category
 router.delete("/delete/:id", (req, res) => {
-    db.Register.destroy({
+    db.Categories.destroy({
         where: {
-          id: req.params.id,
+            Category_id: req.params.id,
         },
     }).then(() => res.send("success"));
-});
-
-
-// edit client
-router.put("/edit", (req, res) => {
-   
-        db.Register.update(req.body, {
-            where: {
-                id: req.body.id,
-            },
-        }).then(() => res.send("successfully Updated"));
-
 });
 
 

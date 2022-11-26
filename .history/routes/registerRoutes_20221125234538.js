@@ -23,11 +23,11 @@ router.delete("/delete/:id", (req, res) => {
 
 
 // edit client
-router.put("/edit", (req, res) => {
+router.put("/register", (req, res) => {
    
-        db.Register.update(req.body, {
+        db.Expense_master.update(req.body, {
             where: {
-                id: req.body.id,
+                ExpenseId: req.body.ExpenseId,
             },
         }).then(() => res.send("successfully Updated"));
 

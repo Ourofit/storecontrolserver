@@ -30,10 +30,7 @@ module.exports = (sequelize, DataTypes) => {
                 type: DataTypes.STRING(1000),
                 allowNull: false,
             },
-            Provincia: {
-                type: DataTypes.TEXT("long"),
-                allowNull: false,
-            },
+         
           
 
             //-----------CATEGORY ID ASSOCIATIONS---------------------------
